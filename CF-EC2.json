@@ -13,7 +13,8 @@
         "InstanceType": "t2.micro",
         "KeyName": {
           "Ref": "KeyPair"
-        }
+        },
+        "SecurityGroups": ["allow-ssh-access"]
       },
       "Type": "AWS::EC2::Instance"
     }
